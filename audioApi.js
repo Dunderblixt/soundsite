@@ -1,7 +1,7 @@
 //
 const myTopURL = 'https://api.spotify.com/v1/me/top/artists';
 const searchURL = 'https://api.spotify.com/v1/search?';
-let endpoint;
+
 const query = this.querySelector('input[type="text"]').value
 // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
 const token = 'undefined';
