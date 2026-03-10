@@ -1,0 +1,57 @@
+.moirai-one-regular {
+  font-family: "Moirai One", system-ui !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.navbar .navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./img/mick-haupt-ehMNP0Ooj3M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.search-bar .form-control {
+  border-radius: 50px 0 0 50px;
+  padding: 0.9rem 1.5rem;
+  border: none;
+}
+
+.search-bar .form-control:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+  border-color: transparent;
+}
+
+.search-bar .btn {
+  background-color: #000;
+  border-radius: 0 50px 50px 0;
+  font-weight: 600;
+  color: white;
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar .form-control:focus,
+.navbar .form-control:focus-visible {
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
