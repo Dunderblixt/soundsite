@@ -72,6 +72,7 @@ const getToken = async code => {
 
   localStorage.setItem('access_token', response.access_token);
 }
+getToken(code);
   let accessToken = localStorage.getItem('access_token');
 
 
@@ -90,10 +91,12 @@ var authOptions = {
   },
   json: true
 };
-/*
+
 request.post(authOptions, function(error, response, body) {
   if (!error && response.statusCode === 200) {
     var token = accessToken;
   }
-});
- */
+}); 
+
+
+
