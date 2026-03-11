@@ -16,7 +16,7 @@ Spotify chosen as API
 Basic HTML and CSS completed for index.html.
 Encountered issues with Spotify API.
 solution: Deezer API replaces Spotify API, motivation: easier testing and functionality.
-
+First fetch and renders tested succesfully.
 
 planned features:
 top artists, albums
