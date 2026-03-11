@@ -24,23 +24,22 @@ window.showArtists = function(response) {
       card.appendChild(img);
     }
 
-
     list.appendChild(card);
   });
 };
 
-// Knappen som hämtar Top Artists
+
+// Knappen som hämtar Top 20 Artists
 const topArtistsBtn = document.getElementById("topArtistsBtn");
 topArtistsBtn.addEventListener("click", function(e) {
   e.preventDefault(); // hindra  från att scrolla upp efter klick
 
-  console.log("Top Artists knapp klickad");
-
-  //  Skapa <script> som hämtar JSONP från Deezer
+  //  Skapa script som hämtar JSONP från Deezer Api
   const script = document.createElement("script");
   script.src = "https://api.deezer.com/chart/0/artists?limit=20&output=jsonp&callback=showArtists";
   document.body.appendChild(script);
 });
+
 
 
 // Callback global för JSONP
@@ -53,7 +52,7 @@ window.showTopAlbums = function(response) {
   if (!list) return;
   list.innerHTML = ""; 
 
-  // Skapar albumkort
+  // Skapar albumkort 
   albums.forEach(album => {
     const card = document.createElement("div");
 
