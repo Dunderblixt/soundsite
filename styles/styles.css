@@ -30,15 +30,45 @@
 
 .hero-section {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(./img/mick-haupt-ehMNP0Ooj3M-unsplash.jpg);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(./img/mick-haupt-ehMNP0Ooj3M-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: blur(6px);
+  transform: scale(1.03);
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
   max-width: 900px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin-top: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.hero-content-wide {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero-login {
@@ -104,4 +134,9 @@
 .card-text-color {
   color: grey;
 
+}
+
+.album-cover {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }

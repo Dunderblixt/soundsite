@@ -54,30 +54,45 @@ window.showTopAlbums = function(response) {
 
   // Skapar albumkort 
   albums.forEach(album => {
-    const card = document.createElement("div");
+    // skapar div och anger classnamn för grid struktur
+    const col = document.createElement("div");
+    col.className = "col"; 
+    // skapar kort
+    const card = document.createElement("div"); 
+    card.className = "card text-bg-dark h-100";
 
-    // Album namn
-    const name = document.createElement("h3");
-    name.textContent = album.title;
-    card.appendChild(name);
-
-    // Album bild (medium)
+    // Album bild (medium) FINNS DET STÖRRE I API:ET?
     if (album.cover_medium) {
       const img = document.createElement("img");
+      // tillämpar bootstrap styling
+      img.className = "card-img-top album-cover";
       img.src = album.cover_medium;
       img.alt = album.title;
       card.appendChild(img);
     }
+    
+    const body = document.createElement("div");
+    body.className = "card-body";
 
+    // Album namn
+    const name = document.createElement("p");
+    // tillämpar styling via bootstrap
+    name.className = "card-text mb-0 fw-semibold";
+    // byter text innehåll till API data
+    name.textContent = album.title;
+    body.appendChild(name);
 
-    // Artist namn
-    if (album.artist && album.artist.name) {
-      const artistName = document.createElement("p");
-      artistName.textContent = `Artist: ${album.artist.name}`;
-      card.appendChild(artistName);
-    }
-
-    list.appendChild(card);
+    // Artist namn - bytte bort if statement pga data kommer returnera ett namn
+    const artistName = document.createElement("p");
+    // tillämpar styling via bootstrap
+    artistName.className = "card-text mb-0 card-text-color"; 
+    // byter textinnehåll till API datan
+    artistName.textContent = album.artist && album.artist.name ? album.artist.name : "";
+    body.appendChild(artistName);
+    // * appendar till parents
+    card.appendChild(body);
+    col.appendChild(card);
+    list.appendChild(col);
   });
 };
 
