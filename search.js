@@ -11,7 +11,7 @@ window.showSearchResults = function(response) {
   const inner = document.createElement("div");
   inner.className = "container search-results-inner";
 
-  // Skapa grid-rad precis som albumkorten i audioApi.js
+  // Skapa grid-rad
   const row = document.createElement("div");
   row.className = "row row-cols-1 row-cols-md-2 g-4";
 
@@ -85,8 +85,6 @@ function performSearch(query) {
   const heroSection = document.getElementById("heroSection");
   heroSection.classList.remove("d-flex");
   heroSection.classList.add("d-none");
-
-  // Skapa script-tagg för JSONP-anrop till Deezer API
   const script = document.createElement("script");
   script.src = `https://api.deezer.com/search?q=${encodeURIComponent(query)}&limit=20&output=jsonp&callback=showSearchResults`;
   document.body.appendChild(script);
@@ -106,7 +104,7 @@ navSearchForm.addEventListener("submit", function(e) {
   performSearch(document.getElementById("navSearchInput").value.trim());
 });
 
-// Auto-search if redirected here with ?q= from another page
+// redirecta till sökresultat om det finns en query
 const urlQuery = new URLSearchParams(window.location.search).get("q");
 if (urlQuery) {
   performSearch(urlQuery);
