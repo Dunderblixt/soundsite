@@ -52,15 +52,10 @@ window.showTopAlbums = function(response) {
   });
 };
 
-// Eventlistener för knappen top50Btn
 document.addEventListener("DOMContentLoaded", function() {
-  const loadAlbumsBtn = document.getElementById("loadAlbums");
-  if (!loadAlbumsBtn) return; // stoppa om knappen inte finns
+  if (!document.getElementById("albumList")) return;
 
-  loadAlbumsBtn.addEventListener("click", function() {
-    console.log("Top 20 Albums knapp klickad");
-    const script = document.createElement("script");
-    script.src = "https://api.deezer.com/chart/0/albums?limit=20&output=jsonp&callback=showTopAlbums";
-    document.body.appendChild(script);
-  });
+  const script = document.createElement("script");
+  script.src = "https://api.deezer.com/chart/0/albums?limit=20&output=jsonp&callback=showTopAlbums";
+  document.body.appendChild(script);
 });

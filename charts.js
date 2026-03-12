@@ -48,15 +48,10 @@ window.showTopCharts = function(response) {
   });
 };
 
-// Eventlistener för Load Top Charts knapp
 document.addEventListener("DOMContentLoaded", function() {
-  const loadChartsBtn = document.getElementById("loadCharts"); 
-  if (!loadChartsBtn) return; // stoppa om knappen inte finns
+  if (!document.getElementById("chartList")) return;
 
-  loadChartsBtn.addEventListener("click", function() {
-    // Skapar script-tag för JSONP-anrop till Deezer
-    const script = document.createElement("script");
-    script.src = "https://api.deezer.com/chart/0/tracks?limit=20&output=jsonp&callback=showTopCharts";
-    document.body.appendChild(script); // lägg till script i body , Deezer returnerar data till showTopCharts
-  });
+  const script = document.createElement("script");
+  script.src = "https://api.deezer.com/chart/0/tracks?limit=20&output=jsonp&callback=showTopCharts";
+  document.body.appendChild(script);
 });
