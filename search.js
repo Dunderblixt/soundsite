@@ -1,4 +1,3 @@
-// Callback global för JSONP – visar sökresultat
 window.showSearchResults = function(response) {
   const results = response.data;
   console.log("Search Results:", results);

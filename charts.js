@@ -15,12 +15,12 @@ window.showTopCharts = function(response) {
 
     //  Card
     const card = document.createElement("div");
-    card.className = "card text-bg-dark h-100"; // samma som album/artist cards
+    card.className = "card text-bg-dark h-100";
 
     //  Track/Album bild
     if (item.album?.cover_medium) {
       const img = document.createElement("img");
-      img.className = "card-img-top album-cover"; // återanvänder samma CSS som album
+      img.className = "card-img-top album-cover"; 
       img.src = item.album.cover_medium;
       img.alt = item.title; // alt-text = track titel
       card.appendChild(img);
@@ -38,7 +38,7 @@ window.showTopCharts = function(response) {
 
     //  Artist namn
     const artist = document.createElement("p");
-    artist.className = "card-text mb-0 card-text-color"; // samma styling som albums och artists
+    artist.className = "card-text mb-0 card-text-color";
     artist.textContent = item.artist?.name || ""; // sätt artist namn eller tomt om ej tillgängligt
     body.appendChild(artist);
 
