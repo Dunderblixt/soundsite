@@ -29,12 +29,11 @@ Mockup:
 2nd meeting.
 Basic HTML and CSS completed for index.html.
 Encountered issues with Spotify API.
-solution: Deezer API replaces Spotify API, motivation: easier testing and functionality.
+Solution: Deezer API replaces Spotify API, motivation: easier testing and functionality.
 First fetch and renders tested succesfully.
 
 planned features:
-top artists, albums, charts
-song search
+top artists, albums, charts, song search.
 
 12-03-26
 Online discussion.
@@ -46,4 +45,5 @@ About Us section added.
 13-03-26
 comment cleanup and indentation.
 Readme fixup.
+
 Soundsite 1.0 ready.
