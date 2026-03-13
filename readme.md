@@ -1,6 +1,3 @@
-09-03-26 
-Project Soundsite started
-
 About AMEH
 We are a group of four developers: Adam, Mohammed, Elin, and Henrik. Together we form the team AMEH.
 This project was created as part of our web development studies where we explore APIs, JavaScript, and modern web design.
@@ -15,26 +12,28 @@ Mohammed A: Main JS
 Adam T: Main CSS
 Elin K: Main HTML and architecture
 
+
+09-03-26 
+Project Soundsite started
 Spotify chosen as API.
 
 10-03-26 
-
+Collaborative web meeting to connect the different parts of the project. Great success.
 Mockup:
 ![Mockup 1](<./img/Figma 1.png>)
 ![Mockup 2](<./img/Figma 2.png>)
 
-Collaborative web meeting to connect the different parts of the project. Great success.
+
 
 11-03-26
 2nd meeting.
 Basic HTML and CSS completed for index.html.
 Encountered issues with Spotify API.
-solution: Deezer API replaces Spotify API, motivation: easier testing and functionality.
+Solution: Deezer API replaces Spotify API, motivation: easier testing and functionality.
 First fetch and renders tested succesfully.
 
 planned features:
-top artists, albums, charts
-song search
+top artists, albums, charts, song search.
 
 12-03-26
 Online discussion.
@@ -46,4 +45,5 @@ About Us section added.
 13-03-26
 comment cleanup and indentation.
 Readme fixup.
+
 Soundsite 1.0 ready.
