@@ -23,4 +23,4 @@ top artists, albums
 song search
 
 12-03-26
-song search, top 50, top artists
+song search, top 20, top artists
