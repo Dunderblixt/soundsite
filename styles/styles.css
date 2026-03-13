@@ -71,23 +71,6 @@
   margin: 0 auto;
 }
 
-.dark-form .form-control {
-  background-color:#212529;
-  color: white;
-  border: 1px solid #444;
-}
-
-.dark-form .form-control::placeholder {
-  color: #bbb;
-}
-
-.dark-form .form-control:focus {
-  background-color: #000;
-  color: white;
-  border-color: #666;
-  box-shadow: none;
-}
-
 #searchResults {
   position: relative;
   overflow: hidden;
