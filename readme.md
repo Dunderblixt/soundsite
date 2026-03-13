@@ -17,6 +17,10 @@ Elin K: Main HTML and architecture
 
 Spotify chosen as API.
 
+Mockup:
+![Mockup 1](<./img/Figma 1.png>)
+![Mockup 2](<./img/Figma 2.png>)
+
 11-03-26
 2nd meeting.
 Basic HTML and CSS completed for index.html.
@@ -29,7 +33,13 @@ top artists, albums, charts
 song search
 
 12-03-26
+Online discussion.
 Song search implemented.
-Top Artists refined, Top Albums and Top Charts follow same logic.
+Top Artists refined to load after DOM, Top Albums and Top Charts follow same logic.
 Search fixed for navbar.
 About Us section added.
+
+13-03-26
+comment cleanup and indentation.
+Readme fixup.
+Soundsite 1.0 ready.
