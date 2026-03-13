@@ -1,6 +1,12 @@
 09-03-26 
 Project Soundsite started
 
+About AMEH
+We are a group of four developers: Adam, Mohammed, Elin, and Henrik. Together we form the team AMEH.
+This project was created as part of our web development studies where we explore APIs, JavaScript, and modern web design.
+We chose to work with a music API because music connects people worldwide. Using the Deezer API allows us to showcase popular artists, albums, and charts dynamically.
+Our goal is to learn how APIs work, how to fetch data from external services, and dynamically render it on a webpage using JavaScript and Bootstrap.
+
 Build a website that offers information about music.
 Lore: Henrik is a music nerd with a background in music production and musicology which motivated building a site to get some information on music, current and past.
 
@@ -9,7 +15,7 @@ Mohammed A: Main JS
 Adam T: Main CSS
 Elin K: Main HTML and architecture
 
-Spotify chosen as API
+Spotify chosen as API.
 
 11-03-26
 2nd meeting.
@@ -19,8 +25,11 @@ solution: Deezer API replaces Spotify API, motivation: easier testing and functi
 First fetch and renders tested succesfully.
 
 planned features:
-top artists, albums
+top artists, albums, charts
 song search
 
 12-03-26
-song search, top 20, top artists
+Song search implemented.
+Top Artists refined, Top Albums and Top Charts follow same logic.
+Search fixed for navbar.
+About Us section added.
