@@ -41,10 +41,12 @@ window.showTopCharts = function(response) {
   window.animateCards?.(list);
 };
 
+// Kör koden när hela HTML-sidan har laddats
 document.addEventListener("DOMContentLoaded", function() {
   if (!document.getElementById("chartList")) return;
 
   const script = document.createElement("script");
-  script.src = "https://api.deezer.com/chart/0/tracks?limit=20&output=jsonp&callback=showTopCharts";
+  // Använder JSONP för att hämta data och skicka den till showTopCharts
+  script.src = "https://api.deezer.com/chart/0/tracks?limit=20&output=jsonp&callback=showTopCharts"; 
   document.body.appendChild(script);
 });
