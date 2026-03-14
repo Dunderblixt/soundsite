@@ -1,6 +1,6 @@
 # Project Soundsite
 
-Live site: https://dunderblixt.github.io/Soundsite
+Live site: https://dunderblixt.github.io/soundsite
 
 
 About AMEH
