@@ -1,3 +1,8 @@
+# Project Soundsite
+
+Live site: https://dunderblixt.github.io/Soundsite
+
+
 About AMEH
 We are a group of four developers: Adam, Mohammed, Elin, and Henrik. Together we form the team AMEH.
 This project was created as part of our web development studies where we explore APIs, JavaScript, and modern web design.
