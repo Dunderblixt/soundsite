@@ -1,8 +1,14 @@
+# Project Soundsite
+
+Live site: https://dunderblixt.github.io/soundsite
+
+
 About AMEH
 We are a group of four developers: Adam, Mohammed, Elin, and Henrik. Together we form the team AMEH.
 This project was created as part of our web development studies where we explore APIs, JavaScript, and modern web design.
 We chose to work with a music API because music connects people worldwide. Using the Deezer API allows us to showcase popular artists, albums, and charts dynamically.
 Our goal is to learn how APIs work, how to fetch data from external services, and dynamically render it on a webpage using JavaScript and Bootstrap.
+This is our first collaborative effort, so we will also learn about establishing a good workflow and sound team dynamics using Github Desktop, Trello, Figma and Discord.
 
 Build a website that offers information about music.
 Lore: Henrik is a music nerd with a background in music production and musicology which motivated building a site to get some information on music, current and past.
