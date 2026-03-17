@@ -1,14 +1,12 @@
-// Global callback-funktion för JSONP som körs när API:t skickar tillbaka top artist-data. 
-
-window.showArtists = function(response) {
+// Global callback-funktion för JSONP som körs när API:t skickar tillbaka top artist-data.
+window.showArtists = function (response) {
   const artists = response.data;
-  console.log("Top 20 Artists:", artists);
 
   const list = document.getElementById("artistList");
   if (!list) return;
   list.innerHTML = "";
 
-  artists.forEach(artist => {
+  artists.forEach((artist) => {
     const col = document.createElement("div");
     col.className = "col";
 
@@ -19,7 +17,7 @@ window.showArtists = function(response) {
       const img = document.createElement("img");
       img.src = artist.picture_medium;
       img.alt = artist.name;
-      img.className = "card-img-top album-cover"; 
+      img.className = "card-img-top album-cover";
       card.appendChild(img);
     }
 
@@ -40,11 +38,12 @@ window.showArtists = function(response) {
 };
 
 // Kör koden när hela HTML-sidan har laddats
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   if (!document.getElementById("artistList")) return;
 
   // script.src Använder JSONP för att hämta data och skicka den till showArtist
   const script = document.createElement("script");
-  script.src = "https://api.deezer.com/chart/0/artists?limit=20&output=jsonp&callback=showArtists";
+  script.src =
+    "https://api.deezer.com/chart/0/artists?limit=20&output=jsonp&callback=showArtists";
   document.body.appendChild(script);
 });
