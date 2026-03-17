@@ -11,7 +11,7 @@ Our goal is to learn how APIs work, how to fetch data from external services, an
 This is our first collaborative effort, so we will also learn about establishing a good workflow and sound team dynamics using Github Desktop, Trello, Figma and Discord.  
 Trello: https://trello.com/b/BadsMl67/soundsite
 
-Build a website that offers information about music.
+Build a website that offers information about music.  
 Lore: Henrik is a music nerd with a background in music production and musicology which motivated building a site to get some information on music, current and past.
 
 Henrik S: Lead dev, JS support
