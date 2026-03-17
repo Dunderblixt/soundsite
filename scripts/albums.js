@@ -1,9 +1,9 @@
 
-// Anropas automatiskt när API skickar tillbaka top albums-data. 
+// Global callback-funktion för JSONP som körs när API:t skickar tillbaka top albums-data. 
 window.showTopAlbums = function(response) {
   const albums = response.data;
   console.log("Top 20 Albums:", albums);
-
+  
   const list = document.getElementById("albumList");
   if (!list) return;
   list.innerHTML = ""; 
