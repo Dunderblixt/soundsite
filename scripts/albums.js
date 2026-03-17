@@ -1,5 +1,5 @@
 
-// Callback global för JSONP
+// Anropas automatiskt när API skickar tillbaka top albums-data. 
 window.showTopAlbums = function(response) {
   const albums = response.data;
   console.log("Top 20 Albums:", albums);
